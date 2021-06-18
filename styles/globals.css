@@ -1,0 +1,28 @@
+
+.header-link {
+  @apply text-darkBlue text-xs mr-2 lg:mr-10 hover:text-blue;
+}
+.company-img {
+  @apply mr-10 last:mr-0;
+}
+
+@layer utilities {
+  .justify-initial {
+    justify-content: initial;
+  }
+}
+
+@layer utilities {
+  .hero-bg {
+    background-image: url('/hero-center-bg.png'), url('/hero-left-bg.png'), url( '/hero-bottom-bg.png');
+    background-position: center top, center top, bottom center;
+    background-repeat: no-repeat;
+    background-size: auto, auto, 100%;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
